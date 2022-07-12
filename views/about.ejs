@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head.ejs')%>
+<body>
+    <%- include('./partials/nav.ejs') %>
+
+    <h3><%= title%></h3>
+    <h3> Hello for the About zone.</h3>
+    <div class="line">
+
+    <% blogs.forEach((blog)=>{ %>
+        <h3><%= blog.title%></h3>
+        <p><%= blog.snippet%></p>
+    <%})%>
+</div>
+    <%- include('./partials/footer.ejs')%>
+</body>
+</html>
